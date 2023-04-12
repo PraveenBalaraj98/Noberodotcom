@@ -77,7 +77,7 @@ public class JavaUtility {
 			return formate;
 	}
 
-	public String  getSystemDateTime() {
+	public static String  getSystemDateTime() {
 		Date date = new Date();
 		String currentDate = date.toString();
 		//System.out.println(currentDate);
@@ -88,6 +88,7 @@ public class JavaUtility {
 		String time = arr[3].replace(":", "");
 			String formate = dd+mm+yyyy+time;
 			return formate;
+			
 	}
 	
 	

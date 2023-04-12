@@ -1,5 +1,6 @@
 package com.qa.nobero.genericutility;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 /**
@@ -15,13 +16,13 @@ public class FileUtility {
 	 * @return value
 	 * @throws Throwable
 	 */
-		public String getPropertyKeyValue(String key) throws Throwable {
+		public String getPropertyKeyValue(String key, String path) throws Throwable {
 			
-			FileInputStream fis = new FileInputStream(IConstants.qaPropertyFilePath);
+			FileInputStream fis = new FileInputStream(path);
 			Properties pObj = new Properties();
 			pObj.load(fis);
 			String value = pObj.getProperty(key);
 			return value;
-			
 		}
-	}
+	
+			}

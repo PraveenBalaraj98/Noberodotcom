@@ -5,6 +5,7 @@ import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 
@@ -20,6 +21,7 @@ public class launchURLTest {
 	public void launchBrowser() throws MalformedURLException, InterruptedException {
 		
 		
+		
 		//Set the capabilities
 		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 		desiredCapabilities.setCapability("automationName", "uiautomator2");
@@ -31,11 +33,17 @@ public class launchURLTest {
 
 		URL url = new URL("http://localhost:4723/wd/hub");
 		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-notifications");
+		
 		AndroidDriver driver = new AndroidDriver(url, desiredCapabilities);
 		
 		driver.get("https://nobero.com/?_ab=0&_fd=0&_sc=1&preview_theme_id=132509958310");
 		
 		HomeRepo hp = new HomeRepo(driver);
 		hp.gethamburger().click();
+		
+		
+		
 	}
 }

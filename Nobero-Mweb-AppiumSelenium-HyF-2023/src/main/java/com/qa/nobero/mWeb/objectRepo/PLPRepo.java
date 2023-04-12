@@ -74,7 +74,7 @@ public class PLPRepo {
 	@FindBy(xpath="//article[@id='sort_dropdown']//span[text()='Featured']")
 	private WebElement featured;
 	
-	@FindBy(xpath="//span[@id='sort_title']")
+	@FindBy(xpath="//article[@id='sort_button']")
 	private WebElement sortBy;
 	
 	@FindBy(xpath="//article[@id='sort_dropdown']//span[text()='New Arrivals']")
@@ -91,6 +91,11 @@ public class PLPRepo {
 	
 	@FindBy(xpath="//article[@id='sort_header']/button[@id='sort_close_btn']")
 	private WebElement closeSort;
+	
+	public WebElement getBestSelling1() {
+		return bestSelling;
+	}
+
 	public AndroidDriver getDriver() {
 		return driver;
 	}

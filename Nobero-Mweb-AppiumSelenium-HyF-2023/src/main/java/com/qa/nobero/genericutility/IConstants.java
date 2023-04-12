@@ -10,8 +10,10 @@ public interface IConstants {
 
 	String EXCELPATH = "./testdata/excelFile/NoberoTestData.xlsx";
 	
-	String qaPropertyFilePath = "./propertyFile/config/qa.properties";
+	String qaCapablityProprtyFile = "./propertyFile/qa.capabilities.properties";
 
 	Duration Explicitly_TIMEOUT = Duration.ofSeconds(20);
-	Duration Implicitly_TIMEOUT = Duration.ofSeconds(20);;
+	Duration Implicitly_TIMEOUT = Duration.ofSeconds(20);
+
+	String qaURLPropertyFilePath = "./propertyFile/qa.url.properties";
 }

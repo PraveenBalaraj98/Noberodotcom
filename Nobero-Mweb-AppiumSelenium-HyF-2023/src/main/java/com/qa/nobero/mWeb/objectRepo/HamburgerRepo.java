@@ -13,10 +13,9 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
  *
  */
 public class HamburgerRepo {
-	AndroidDriver driver;
-	public  HamburgerRepo(AndroidDriver driver) {
+	public AndroidDriver driver;
+	public HamburgerRepo(AndroidDriver driver) {
 		PageFactory.initElements(driver,this);
-
 	}
 
 	@FindBy(xpath="//div[@id='menu-container']/descendant::a[.='My Account']")
@@ -148,6 +147,7 @@ public class HamburgerRepo {
 	//topSelling
 	//sale
 	//cart
+	//cartcount
 	
 	
 	
