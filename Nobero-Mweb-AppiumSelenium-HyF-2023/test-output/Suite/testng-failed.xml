@@ -6,8 +6,8 @@
       <class name="com.qa.nobero.cartTest.cartTest">
         <methods>
           <include name="ToVerifyProductIsAddedToCartTest"/>
-          <include name="stopServer"/>
           <include name="launchBrowser"/>
+          <include name="stopServer"/>
           <include name="startserver"/>
         </methods>
       </class> <!-- com.qa.nobero.cartTest.cartTest -->

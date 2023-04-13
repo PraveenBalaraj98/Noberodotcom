@@ -30,7 +30,7 @@ public class cartTest extends BaseClass {
 			repo.getPLPRepo().getInStockradio().click();
 		
 		//Step6: Click On Apply
-			repo.getPLPRepo().getApply().click();
+			//repo.getPLPRepo().getApply().click();
 		
 		//Step7: Click on Sort
 		repo.getPLPRepo().getSortBy().click();

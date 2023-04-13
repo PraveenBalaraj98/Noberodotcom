@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,  4 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.qa.nobero.cartTest.cartTest" class="method navigator-link" hash-for-method="ToVerifyProductIsAddedToCartTest">ToVerifyProductIsAddedToCartTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.nobero.cartTest.cartTest" class="method navigator-link" hash-for-method="ToVerifyProductIsAddedToCartTest">ToVerifyProductIsAddedToCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.nobero.cartTest.cartTest" class="method navigator-link" hash-for-method="ToVerifyProductIsAddedToCartTest">ToVerifyProductIsAddedToCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.nobero.cartTest.cartTest" class="method navigator-link" hash-for-method="ToVerifyProductIsAddedToCartTest">ToVerifyProductIsAddedToCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qa.nobero.cartTest.cartTest" class="method navigator-link" hash-for-method="ToVerifyProductIsAddedToCartTest">ToVerifyProductIsAddedToCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,9 +147,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.qa.nobero.cartTest.cartTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,10 +158,161 @@
                   <a name="ToVerifyProductIsAddedToCartTest">
                   </a> <!-- ToVerifyProductIsAddedToCartTest -->
                   <span class="method-name">ToVerifyProductIsAddedToCartTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg width=&quot;18&quot; height=&quot;16&quot; viewBox=&quot;0 0 18 16&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;...&lt;/svg&gt; is not clickable at point (28, 59). Other element would receive the click: &lt;div id=&quot;filter-dropdown-bg&quot; class=&quot;z-50 fixed left-0 top-0 h-screen w-screen bg-[#141A38]/50 invisible&quot; style=&quot;visibility: visible;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=112.0.5615.48)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5122fa7a-d85e-48f6-acd5-1bb044f241f3, clickElement {id=217c3017-1d7f-46e1-ace5-ea27d452548d}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: uiautomator2, appium:chromedriverExecutable: C:\Users\Praveen B\Download..., appium:chromedriverExecutableDir: null/driver/.exe, appium:databaseEnabled: false, appium:desired: {automationName: uiautomator2, browserName: chrome, chromedriverExecutable: C:\Users\Praveen B\Download..., chromedriverExecutableDir: null/driver/.exe, deviceName: &quot;Redmi Note 12&quot;, platformName: android, platformVersion: 12, udid: 509ead11022}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22111317I, appium:deviceName: 509ead11022, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 509ead11022, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 94, appium:takesScreenshot: true, appium:udid: 509ead11022, appium:viewportRect: {height: 2082, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: chrome, platformName: ANDROID}
+Element: [[AndroidDriver: chrome on ANDROID (5122fa7a-d85e-48f6-acd5-1bb044f241f3)] -&gt; xpath: //*[local-name()=&apos;svg&apos; and @viewBox=&apos;0 0 18 16&apos;]]
+Session ID: 5122fa7a-d85e-48f6-acd5-1bb044f241f3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.qa.nobero.cartTest.cartTest.ToVerifyProductIsAddedToCartTest(cartTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qa.nobero.cartTest.cartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyProductIsAddedToCartTest">
+                  </a> <!-- ToVerifyProductIsAddedToCartTest -->
+                  <span class="method-name">ToVerifyProductIsAddedToCartTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;article data-ga-view=&quot;&quot; data-ga-view-info=&quot;Sort_View&quot; class=&quot;flex items-center pl-3.5  hover:cursor-pointer lg:justify-center lg:py-2 lg:px-4 lg:rounded lg:border-[1px] lg:border-[#E8E9EA]&quot; id=&quot;sort_button&quot;&gt;...&lt;/article&gt; is not clickable at point (281, 712). Other element would receive the click: &lt;input type=&quot;submit&quot; value=&quot;Apply&quot; onclick=&quot;showLoader()&quot; id=&quot;filter-submit&quot; class=&quot;flex items-center justify-center w-40 h-10 py-2.5 px-4 text-white bg-[#242F66] rounded-[84px]&quot;&gt;
+  (Session info: chrome=112.0.5615.48)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5122fa7a-d85e-48f6-acd5-1bb044f241f3, clickElement {id=3fd4aec4-5eb5-45ca-a7e9-54d618dbb11f}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: uiautomator2, appium:chromedriverExecutable: C:\Users\Praveen B\Download..., appium:chromedriverExecutableDir: null/driver/.exe, appium:databaseEnabled: false, appium:desired: {automationName: uiautomator2, browserName: chrome, chromedriverExecutable: C:\Users\Praveen B\Download..., chromedriverExecutableDir: null/driver/.exe, deviceName: &quot;Redmi Note 12&quot;, platformName: android, platformVersion: 12, udid: 509ead11022}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22111317I, appium:deviceName: 509ead11022, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 509ead11022, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 94, appium:takesScreenshot: true, appium:udid: 509ead11022, appium:viewportRect: {height: 2082, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: chrome, platformName: ANDROID}
+Element: [[AndroidDriver: chrome on ANDROID (5122fa7a-d85e-48f6-acd5-1bb044f241f3)] -&gt; xpath: //article[@id=&apos;sort_button&apos;]]
+Session ID: 5122fa7a-d85e-48f6-acd5-1bb044f241f3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.qa.nobero.cartTest.cartTest.ToVerifyProductIsAddedToCartTest(cartTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyProductIsAddedToCartTest">
+                  </a> <!-- ToVerifyProductIsAddedToCartTest -->
+                  <span class="method-name">ToVerifyProductIsAddedToCartTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg width=&quot;18&quot; height=&quot;16&quot; viewBox=&quot;0 0 18 16&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;...&lt;/svg&gt; is not clickable at point (28, 59). Other element would receive the click: &lt;div id=&quot;filter-dropdown-bg&quot; class=&quot;z-50 fixed left-0 top-0 h-screen w-screen bg-[#141A38]/50 invisible&quot; style=&quot;visibility: visible;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=112.0.5615.48)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5122fa7a-d85e-48f6-acd5-1bb044f241f3, clickElement {id=217c3017-1d7f-46e1-ace5-ea27d452548d}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: uiautomator2, appium:chromedriverExecutable: C:\Users\Praveen B\Download..., appium:chromedriverExecutableDir: null/driver/.exe, appium:databaseEnabled: false, appium:desired: {automationName: uiautomator2, browserName: chrome, chromedriverExecutable: C:\Users\Praveen B\Download..., chromedriverExecutableDir: null/driver/.exe, deviceName: &quot;Redmi Note 12&quot;, platformName: android, platformVersion: 12, udid: 509ead11022}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22111317I, appium:deviceName: 509ead11022, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 509ead11022, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 94, appium:takesScreenshot: true, appium:udid: 509ead11022, appium:viewportRect: {height: 2082, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: chrome, platformName: ANDROID}
+Element: [[AndroidDriver: chrome on ANDROID (5122fa7a-d85e-48f6-acd5-1bb044f241f3)] -&gt; xpath: //*[local-name()=&apos;svg&apos; and @viewBox=&apos;0 0 18 16&apos;]]
+Session ID: 5122fa7a-d85e-48f6-acd5-1bb044f241f3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.qa.nobero.cartTest.cartTest.ToVerifyProductIsAddedToCartTest(cartTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyProductIsAddedToCartTest">
+                  </a> <!-- ToVerifyProductIsAddedToCartTest -->
+                  <span class="method-name">ToVerifyProductIsAddedToCartTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg width=&quot;18&quot; height=&quot;16&quot; viewBox=&quot;0 0 18 16&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;...&lt;/svg&gt; is not clickable at point (28, 59). Other element would receive the click: &lt;div id=&quot;filter-dropdown-bg&quot; class=&quot;z-50 fixed left-0 top-0 h-screen w-screen bg-[#141A38]/50 invisible&quot; style=&quot;visibility: visible;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=112.0.5615.48)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5122fa7a-d85e-48f6-acd5-1bb044f241f3, clickElement {id=217c3017-1d7f-46e1-ace5-ea27d452548d}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: uiautomator2, appium:chromedriverExecutable: C:\Users\Praveen B\Download..., appium:chromedriverExecutableDir: null/driver/.exe, appium:databaseEnabled: false, appium:desired: {automationName: uiautomator2, browserName: chrome, chromedriverExecutable: C:\Users\Praveen B\Download..., chromedriverExecutableDir: null/driver/.exe, deviceName: &quot;Redmi Note 12&quot;, platformName: android, platformVersion: 12, udid: 509ead11022}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22111317I, appium:deviceName: 509ead11022, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 509ead11022, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 94, appium:takesScreenshot: true, appium:udid: 509ead11022, appium:viewportRect: {height: 2082, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: chrome, platformName: ANDROID}
+Element: [[AndroidDriver: chrome on ANDROID (5122fa7a-d85e-48f6-acd5-1bb044f241f3)] -&gt; xpath: //*[local-name()=&apos;svg&apos; and @viewBox=&apos;0 0 18 16&apos;]]
+Session ID: 5122fa7a-d85e-48f6-acd5-1bb044f241f3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.qa.nobero.cartTest.cartTest.ToVerifyProductIsAddedToCartTest(cartTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyProductIsAddedToCartTest">
+                  </a> <!-- ToVerifyProductIsAddedToCartTest -->
+                  <span class="method-name">ToVerifyProductIsAddedToCartTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg width=&quot;18&quot; height=&quot;16&quot; viewBox=&quot;0 0 18 16&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;...&lt;/svg&gt; is not clickable at point (28, 59). Other element would receive the click: &lt;div id=&quot;filter-dropdown-bg&quot; class=&quot;z-50 fixed left-0 top-0 h-screen w-screen bg-[#141A38]/50 invisible&quot; style=&quot;visibility: visible;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=112.0.5615.48)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [5122fa7a-d85e-48f6-acd5-1bb044f241f3, clickElement {id=217c3017-1d7f-46e1-ace5-ea27d452548d}]
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: uiautomator2, appium:chromedriverExecutable: C:\Users\Praveen B\Download..., appium:chromedriverExecutableDir: null/driver/.exe, appium:databaseEnabled: false, appium:desired: {automationName: uiautomator2, browserName: chrome, chromedriverExecutable: C:\Users\Praveen B\Download..., chromedriverExecutableDir: null/driver/.exe, deviceName: &quot;Redmi Note 12&quot;, platformName: android, platformVersion: 12, udid: 509ead11022}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22111317I, appium:deviceName: 509ead11022, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 509ead11022, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 94, appium:takesScreenshot: true, appium:udid: 509ead11022, appium:viewportRect: {height: 2082, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: chrome, platformName: ANDROID}
+Element: [[AndroidDriver: chrome on ANDROID (5122fa7a-d85e-48f6-acd5-1bb044f241f3)] -&gt; xpath: //*[local-name()=&apos;svg&apos; and @viewBox=&apos;0 0 18 16&apos;]]
+Session ID: 5122fa7a-d85e-48f6-acd5-1bb044f241f3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at com.qa.nobero.cartTest.cartTest.ToVerifyProductIsAddedToCartTest(cartTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -185,16 +365,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ToVerifyProductIsAddedToCartTest')
 data.setCell(0, 2, 'com.qa.nobero.cartTest.cartTest')
-data.setCell(0, 3, 19067);
+data.setCell(0, 3, 6605);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ToVerifyProductIsAddedToCartTest')
+data.setCell(1, 2, 'com.qa.nobero.cartTest.cartTest')
+data.setCell(1, 3, 1203);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ToVerifyProductIsAddedToCartTest')
+data.setCell(2, 2, 'com.qa.nobero.cartTest.cartTest')
+data.setCell(2, 3, 1158);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ToVerifyProductIsAddedToCartTest')
+data.setCell(3, 2, 'com.qa.nobero.cartTest.cartTest')
+data.setCell(3, 3, 1147);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ToVerifyProductIsAddedToCartTest')
+data.setCell(4, 2, 'com.qa.nobero.cartTest.cartTest')
+data.setCell(4, 3, 1119);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -231,11 +427,29 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">ToVerifyProductIsAddedToCartTest</span>
-                <span class="method-start">29914 ms</span>
+                <span class="method-start">27165 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyProductIsAddedToCartTest</span>
+                <span class="method-start">33776 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyProductIsAddedToCartTest</span>
+                <span class="method-start">34936 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyProductIsAddedToCartTest</span>
+                <span class="method-start">36056 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ToVerifyProductIsAddedToCartTest</span>
+                <span class="method-start">37204 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">stopServer</span>
-                <span class="method-start">49228 ms</span>
+                <span class="method-start">39322 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
