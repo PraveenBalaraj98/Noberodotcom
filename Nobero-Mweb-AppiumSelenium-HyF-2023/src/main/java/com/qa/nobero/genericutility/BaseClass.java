@@ -101,7 +101,7 @@ public class BaseClass {
 		String path = "../Nobero-Mweb-AppiumSelenium-HyF-2023/reports/screenshots/" +JavaUtility.getSystemDateTime()+name + ".png";
 		File dest = new File(path);
 		Files.copy(src, dest);
-		return dest.adsulutePath();
+		return path;
 	}
 
 	public static String ts() {
