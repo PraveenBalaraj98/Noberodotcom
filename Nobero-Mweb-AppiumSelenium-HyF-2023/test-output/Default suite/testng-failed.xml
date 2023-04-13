@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.nobero.cartTest.cartTest">
+      <class name="com.qa.nobero.junk.launchURLTest">
         <methods>
-          <include name="ToVerifyProductIsAddedToCartTest"/>
+          <include name="startserver"/>
+          <include name="stopServer"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- com.qa.nobero.cartTest.cartTest -->
+      </class> <!-- com.qa.nobero.junk.launchURLTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

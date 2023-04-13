@@ -3,17 +3,15 @@ package com.qa.nobero.genericutility;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-public class RetryAnalyzer {
-
-	public class RetryAnalyzerImp implements IRetryAnalyzer{
-		int counter=0;
-		int retryLimit=0;  //RetryLimitCount is given by developer ,TE should not assume Limit
-		public boolean retry(ITestResult result) {
-			if(counter<retryLimit) {
-				counter++;
-				return true;
-			}
-			return false;
-		}
+public class RetryAnalyzer implements IRetryAnalyzer
+	{
+	    int retry=IConstants.retryValue;
+	    public boolean retry(ITestResult iTestResult) {
+	        if(retry>=0)
+	        {
+	            retry--;
+	            return  true;
+	        }
+	        return false;
+	    }
 	}
-}

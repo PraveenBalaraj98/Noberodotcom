@@ -8,8 +8,7 @@ import com.qa.nobero.mWeb.objectRepo.RepositoryHub;
 @Listeners(com.qa.nobero.genericutility.ITestListenerImpClass.class)
 public class cartTest extends BaseClass {
 
-	//@Test(retryAnalyzer = com.qa.nobero.genericutility.RetryAnalyzer.class)
-	@Test
+	@Test(retryAnalyzer = com.qa.nobero.genericutility.RetryAnalyzer.class)
 	public void ToVerifyProductIsAddedToCartTest() {
 		
 		//Create Object for Singleton Class 

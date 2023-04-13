@@ -3,12 +3,14 @@ package com.qa.nobero.genericutility;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
@@ -16,12 +18,26 @@ import com.google.common.io.Files;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 
+/**
+ * @author Praveen B
+ *
+ */
 public class BaseClass {
 
 	public AndroidDriver driver;
 	public static AndroidDriver sdriver;
+	public AppiumDriverLocalService server;
 
+	@BeforeSuite
+	public void startserver() {
+		server = AppiumDriverLocalService.buildService
+				(new AppiumServiceBuilder().usingPort(4723).usingDriverExecutable(new File("C:\\Program Files\\nodejs\\node.exe")));
+		server.start();
+	}
+	
 	@BeforeTest
 	public void launchBrowser() throws Throwable {
 		FileUtility fileUtil = new FileUtility();
@@ -35,15 +51,25 @@ public class BaseClass {
 		desiredCapabilities.setCapability(MobileCapabilityType.UDID, fileUtil.getPropertyKeyValue("UDID", IConstants.qaCapablityProprtyFile));
 		desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, fileUtil.getPropertyKeyValue("DEVICE_NAME", IConstants.qaCapablityProprtyFile));
 		desiredCapabilities.setCapability(MobileCapabilityType.BROWSER_NAME, fileUtil.getPropertyKeyValue("BROWSER_NAME", IConstants.qaCapablityProprtyFile));
-
-		URL url = new URL("http://localhost:4723/wd/hub");
+		//desiredCapabilities.setCapability("autoGrantPermissions", false);
+		desiredCapabilities.setCapability("chromedriverExecutable", "C:\\Users\\Praveen B\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		
+		//desiredCapabilities.setCapability("chromedriverExecutableDir", System.getProperty("user.data")+"/driver/.exe");
+		
+		
+		URL url = new URL("http://localhost:4723");
 
 		driver = new AndroidDriver(url, desiredCapabilities);
 		sdriver=driver;
 
 		driver.get(fileUtil.getPropertyKeyValue("masterURL", IConstants.qaURLPropertyFilePath));
 		
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(IConstants.Implicitly_TIMEOUT);
+	}
+	
+	@AfterSuite
+	public void stopServer() {
+		server.stop();
 	}
 
 	public static String takescreenshot(String name) throws IOException {

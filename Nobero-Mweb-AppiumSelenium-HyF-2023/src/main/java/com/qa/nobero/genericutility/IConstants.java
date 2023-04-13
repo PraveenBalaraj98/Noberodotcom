@@ -16,4 +16,6 @@ public interface IConstants {
 	Duration Implicitly_TIMEOUT = Duration.ofSeconds(20);
 
 	String qaURLPropertyFilePath = "./propertyFile/qa.url.properties";
+	
+	int retryValue = 3;
 }
