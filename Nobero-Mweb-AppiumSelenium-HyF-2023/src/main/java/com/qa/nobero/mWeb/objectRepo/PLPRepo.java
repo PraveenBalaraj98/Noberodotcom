@@ -92,6 +92,31 @@ public class PLPRepo {
 	@FindBy(xpath="//article[@id='sort_header']/button[@id='sort_close_btn']")
 	private WebElement closeSort;
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public WebElement getBestSelling1() {
 		return bestSelling;
 	}

@@ -68,7 +68,8 @@ public class BaseClass {
 		driver.get(URL);
 
 		driver.manage().timeouts().implicitlyWait(IConstants.Implicitly_TIMEOUT);
-
+		
+		Thread.sleep(5000);
 		//Handle Permission Pop up, Switch To Native app i.e Chrome
 		Set<String> contextNames = driver.getContextHandles();
 		for (String contextName : contextNames) {
@@ -84,7 +85,7 @@ public class BaseClass {
 		}
 		//driver.context("NATIVE_APP");
 		//Click on Allow
-		driver.findElement(By.xpath(".//android.widget.Button[@text='Allow']")).click();
+		driver.findElement(By.xpath(".//android.widget.Button[@text='Block']")).click();
 		//Change context back to the main page.
 		driver.context("CHROMIUM");
 

@@ -40,9 +40,7 @@ public class launchURLTest
 
 	@AfterSuite
 	public void stopServer() {
-
 		server.stop();
-
 	}
 
 

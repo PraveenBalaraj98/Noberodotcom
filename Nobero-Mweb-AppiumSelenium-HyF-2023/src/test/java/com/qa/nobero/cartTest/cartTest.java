@@ -34,12 +34,12 @@ public class cartTest extends BaseClass {
 		
 		//Step7: Click on Sort
 		repo.getPLPRepo().getSortBy().click();
-		//repo.getPLPRepo().getCloseSort().click();
+		repo.getPLPRepo().getCloseSort().click();
 		
 		//Step8: Click on Best Selling
 		repo.getPLPRepo().getBestSelling().click();
 		
-		//Step9: Click on 1st Product and fetch the Product name
+		//Step9: Click on 1st Product and fetch the Product name.                                                    
 		String prodName = repo.getPLPRepo().getProductName().getText();
 		System.out.println(prodName);
 		repo.getPLPRepo().getProducts().click();
