@@ -1,9 +1,12 @@
 package com.qa.nobero.mWeb.objectRepo;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 
 public class PLPRepo {
@@ -11,12 +14,20 @@ public class PLPRepo {
 	AndroidDriver driver;
 	public  PLPRepo(AndroidDriver driver) {
 		PageFactory.initElements(driver,this);
-
 	}
 
 	@FindBy(xpath="//h3[contains(.,'items')]")
 	private WebElement items;
 	
+	@FindBy(xpath="//article[@id='product_price']//span[@class='font-[familyMedium] text-sm text-[#121212] pr-1 lg:text-base ']")
+	private List<WebElement> ProductPriceList;
+	
+
+
+	public List<WebElement> getProductPriceList() {
+		return ProductPriceList;
+	}
+
 	@FindBy(xpath="//article[@id='product-grid']/section")
 	private WebElement products;
 	
@@ -49,12 +60,10 @@ public class PLPRepo {
 	
 	@FindBy(xpath="//article[@id='filter_header']/button[@id='filter_close_btn']")
 	private WebElement closeFilter;
-	
-	@FindBy(xpath="//form[@id='submit-mobile-form']//div[@class='pl-5 lg:pl-0']//label[@class='cursor-pointer']")
-	private WebElement filterByPrice;
+
 	
 	@FindBy(xpath="//form[@id='submit-mobile-form']//details[@class='filter-group']//li[@class='flex flex-col pt-[18px] pl-1  show-color ']")
-	private WebElement filterByColor;
+	private WebElement firstColor;
 	
 	@FindBy(xpath="//form[@id='submit-mobile-form']//details[@class='filter-group']//span[contains(.,'+ Show')]")
 	private WebElement showMoreColor;
@@ -93,30 +102,51 @@ public class PLPRepo {
 	private WebElement closeSort;
 	
 	
+	@FindBy(xpath="//form[@id='submit-mobile-form']/descendant::span[text()='Less than ₹500']")
+	private WebElement lessthan₹500;
+
+	@FindBy(xpath="//form[@id='submit-mobile-form']/descendant::span[text()='₹500 - ₹1000']")
+	private WebElement ₹500to₹1000;
+
+	@FindBy(xpath="//form[@id='submit-mobile-form']/descendant::span[text()='₹1000 - ₹1500']")
+	private WebElement ₹1000to₹1500;
+
+	@FindBy(xpath="//form[@id='submit-mobile-form']/descendant::span[text()='₹1500 - ₹2000']")
+	private WebElement ₹1500to₹2000;
+
+	@FindBy(xpath="//form[@id='submit-mobile-form']/descendant::span[text()='More than ₹2000']")
+	private WebElement morethan₹2000;
 	
+	@FindBy(xpath="//form[@id='submit-mobile-form']/descendant::section[@class='pb-5']/ul/li")
+	private List<WebElement> eachColor;
+
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public List<WebElement> getAllSize() {
+		return allSize;
+	}
+	public WebElement getLessthan₹500() {
+		return lessthan₹500;
+	}
+
+	public WebElement get₹500to₹1000() {
+		return ₹500to₹1000;
+	}
+	public WebElement get₹1000to₹1500() {
+		return ₹1000to₹1500;
+	}
+
+	public WebElement get₹1500to₹2000() {
+		return ₹1500to₹2000;
+	}
+
+	public WebElement getMorethan₹2000() {
+		return morethan₹2000;
+	}
+
+	public List<WebElement> getEachColor() {
+		return eachColor;
+	}
+
 	public WebElement getBestSelling1() {
 		return bestSelling;
 	}
@@ -173,12 +203,8 @@ public class PLPRepo {
 		return closeFilter;
 	}
 
-	public WebElement getFilterByPrice() {
-		return filterByPrice;
-	}
-
 	public WebElement getFilterByColor() {
-		return filterByColor;
+		return firstColor;
 	}
 
 	public WebElement getShowMoreColor() {
@@ -227,6 +253,31 @@ public class PLPRepo {
 
 	public WebElement getCloseSort() {
 		return closeSort;
+	}
+	
+	public void selectColor(int index) {	
+		List<WebElement> list = this.getEachColor();
+		int count = 0;
+		for (WebElement webElement : list) {
+			count++;
+			if (count==index) {
+				webElement.click();
+			}
+		}	
+	}
+	
+	@FindBy(xpath="//form[@id='submit-mobile-form']//li[@class='flex pt-[18px] pl-1  ']//input[@id='Filter-filter.v.option.size-1']")
+	private List<WebElement> allSize;
+	
+	public void selectSize(String Size) {
+		
+		List<WebElement> list = this.getAllSize();
+		for (WebElement webElement : list) {
+			String sizeWE = webElement.getText();
+			if (sizeWE.equals(Size)) {
+				webElement.click();
+			}
+		}	
 	}
 	
 	//method for price filter and color and size

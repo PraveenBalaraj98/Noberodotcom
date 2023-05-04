@@ -1,20 +1,26 @@
 package com.qa.nobero.junk;
 
 import java.io.File;
+import org.openqa.selenium.logging.LogEntry;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import com.qa.nobero.genericutility.BaseClass;
 import com.qa.nobero.mWeb.objectRepo.HomeRepo;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -23,28 +29,11 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 
-public class launchURLTest
+public class launchURLTest extends BaseClass
 
 {
-	public AppiumDriverLocalService server;
 
-	@BeforeSuite
-	public void startserver() {
-		server = AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
-				.usingPort(4723).usingDriverExecutable(new File("C:\\Program Files\\nodejs\\node.exe"))
-				);
-		server.start();
-
-
-	}
-
-	@AfterSuite
-	public void stopServer() {
-		server.stop();
-	}
-
-
-	@Test
+	@Test(enabled = false)
 	public void launchBrowser() throws MalformedURLException, InterruptedException {
 
 
@@ -88,7 +77,7 @@ public class launchURLTest
 //		try {
 //		Thread.sleep( 1500 );
 //		} catch (InterruptedException e) {
-//		e.printStackTrace();
+//		e.printStackTrace();+
 //		}
 //		}
 //		}
@@ -101,10 +90,17 @@ public class launchURLTest
 				driver.context("CHROMIUM");
 				HomeRepo hp = new HomeRepo(driver);
 				hp.gethamburger().click();
-		
+
+	}
 	
-
-
-
+	@Test(enabled = true)
+	public void fetchVariantID() {
+		
+		LogEntries entry = driver.manage().logs().get(LogType.BROWSER);
+		List<LogEntry> Logs = entry.getAll();
+		for (LogEntry logEntry : Logs) {
+			System.out.println("----->"+logEntry);
+		}
+		
 	}
 }

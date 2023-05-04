@@ -126,7 +126,10 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 		
 		@FindBy(xpath="//button[@id='BackToTop']")
 		private WebElement backToTop;
-		
+	
+
+
+
 		//shopallprod
 		//explore
 		public WebElement gethamburger() {

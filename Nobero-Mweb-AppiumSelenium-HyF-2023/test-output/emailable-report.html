@@ -9,119 +9,287 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Testng</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num attn">1</td><td class="num">51,912</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Testng</a></td><td class="num">0</td><td class="num attn">10</td><td class="num">0</td><td class="num">0</td><td class="num">271</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testng &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.nobero.cartTest.cartTest</td><td><a href="#m0">ToVerifyProductIsAddedToCartTest</a></td><td rowspan="1">1681886740161</td><td rowspan="1">1151</td></tr><tr><th colspan="4">Testng &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="4">com.qa.nobero.cartTest.cartTest</td><td><a href="#m1">ToVerifyProductIsAddedToCartTest</a></td><td rowspan="4">1681886739013</td><td rowspan="4">1145</td></tr><tr class="retriedeven"><td><a href="#m2">ToVerifyProductIsAddedToCartTest</a></td></tr><tr class="retriedeven"><td><a href="#m3">ToVerifyProductIsAddedToCartTest</a></td></tr><tr class="retriedeven"><td><a href="#m4">ToVerifyProductIsAddedToCartTest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testng &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qa.nobero.cartTest.cartTest</td><td><a href="#m0">startserver</a></td><td rowspan="1">1683129938115</td><td rowspan="1">21158</td></tr><tr><th colspan="4">Testng &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">com.qa.nobero.cartTest.cartTest</td><td><a href="#m1">afterTestConfig</a></td><td rowspan="1">1683129959550</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">launchBrowser</a></td><td rowspan="1">1683129959491</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">stopServer</a></td><td rowspan="1">1683129959881</td><td rowspan="1">0</td></tr><tr><th colspan="4">Testng &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="10">com.qa.nobero.cartTest.cartTest</td><td><a href="#m4">ToVerifyApplyFilterforAvailabilityTest</a></td><td rowspan="1">1683129959508</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">ToVerifyApplyFilterforColorTest</a></td><td rowspan="1">1683129959519</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">ToVerifyApplyFilterforSizeTest</a></td><td rowspan="1">1683129959521</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">ToVerifyProductIsAddedToCartAfterSearchTest</a></td><td rowspan="1">1683129959524</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m8">ToVerifyProductIsAddedToCartTest</a></td><td rowspan="1">1683129959528</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">ToVerifySortByBestSellingTest</a></td><td rowspan="1">1683129959530</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m10">ToVerifySortByFeaturedTest</a></td><td rowspan="1">1683129959534</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">ToVerifySortByNewArrivalTest</a></td><td rowspan="1">1683129959538</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m12">ToVerifySortByPriceHighToLowTest</a></td><td rowspan="1">1683129959542</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m13">ToVerifySortByPriceLowToHighTest</a></td><td rowspan="1">1683129959545</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Testng</h2><h3 id="m0">com.qa.nobero.cartTest.cartTest#ToVerifyProductIsAddedToCartTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg width=&quot;18&quot; height=&quot;16&quot; viewBox=&quot;0 0 18 16&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;...&lt;/svg&gt; is not clickable at point (28, 59). Other element would receive the click: &lt;div id=&quot;filter-dropdown-bg&quot; class=&quot;z-50 fixed left-0 top-0 h-screen w-screen bg-[#141A38]/50 invisible&quot; style=&quot;visibility: visible;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.101)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [669f2ac3-6636-4234-923a-afc9f1169268, clickElement {id=c10a0772-73fd-4e34-a027-ac0fcc63ec4d}]
-Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: uiautomator2, appium:chromedriverExecutable: C:\Users\Praveen B\Download..., appium:chromedriverExecutableDir: null/driver/.exe, appium:databaseEnabled: false, appium:desired: {automationName: uiautomator2, browserName: chrome, chromedriverExecutable: C:\Users\Praveen B\Download..., chromedriverExecutableDir: null/driver/.exe, deviceName: &quot;Redmi Note 12&quot;, platformName: android, platformVersion: 12, udid: 509ead11022}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22111317I, appium:deviceName: 509ead11022, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 509ead11022, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 94, appium:takesScreenshot: true, appium:udid: 509ead11022, appium:viewportRect: {height: 2168, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: chrome, platformName: ANDROID}
-Element: [[AndroidDriver: chrome on ANDROID (669f2ac3-6636-4234-923a-afc9f1169268)] -&gt; xpath: //*[local-name()=&apos;svg&apos; and @viewBox=&apos;0 0 18 16&apos;]]
-Session ID: 669f2ac3-6636-4234-923a-afc9f1169268
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.qa.nobero.cartTest.cartTest.ToVerifyProductIsAddedToCartTest(cartTest.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.nobero.cartTest.cartTest#ToVerifyProductIsAddedToCartTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg width=&quot;18&quot; height=&quot;16&quot; viewBox=&quot;0 0 18 16&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;...&lt;/svg&gt; is not clickable at point (28, 59). Other element would receive the click: &lt;div id=&quot;filter-dropdown-bg&quot; class=&quot;z-50 fixed left-0 top-0 h-screen w-screen bg-[#141A38]/50 invisible&quot; style=&quot;visibility: visible;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.101)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [669f2ac3-6636-4234-923a-afc9f1169268, clickElement {id=c10a0772-73fd-4e34-a027-ac0fcc63ec4d}]
-Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: uiautomator2, appium:chromedriverExecutable: C:\Users\Praveen B\Download..., appium:chromedriverExecutableDir: null/driver/.exe, appium:databaseEnabled: false, appium:desired: {automationName: uiautomator2, browserName: chrome, chromedriverExecutable: C:\Users\Praveen B\Download..., chromedriverExecutableDir: null/driver/.exe, deviceName: &quot;Redmi Note 12&quot;, platformName: android, platformVersion: 12, udid: 509ead11022}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22111317I, appium:deviceName: 509ead11022, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 509ead11022, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 94, appium:takesScreenshot: true, appium:udid: 509ead11022, appium:viewportRect: {height: 2168, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: chrome, platformName: ANDROID}
-Element: [[AndroidDriver: chrome on ANDROID (669f2ac3-6636-4234-923a-afc9f1169268)] -&gt; xpath: //*[local-name()=&apos;svg&apos; and @viewBox=&apos;0 0 18 16&apos;]]
-Session ID: 669f2ac3-6636-4234-923a-afc9f1169268
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.qa.nobero.cartTest.cartTest.ToVerifyProductIsAddedToCartTest(cartTest.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.qa.nobero.cartTest.cartTest#ToVerifyProductIsAddedToCartTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg width=&quot;18&quot; height=&quot;16&quot; viewBox=&quot;0 0 18 16&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;...&lt;/svg&gt; is not clickable at point (28, 59). Other element would receive the click: &lt;div id=&quot;filter-dropdown-bg&quot; class=&quot;z-50 fixed left-0 top-0 h-screen w-screen bg-[#141A38]/50 invisible&quot; style=&quot;visibility: visible;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.101)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [669f2ac3-6636-4234-923a-afc9f1169268, clickElement {id=c10a0772-73fd-4e34-a027-ac0fcc63ec4d}]
-Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: uiautomator2, appium:chromedriverExecutable: C:\Users\Praveen B\Download..., appium:chromedriverExecutableDir: null/driver/.exe, appium:databaseEnabled: false, appium:desired: {automationName: uiautomator2, browserName: chrome, chromedriverExecutable: C:\Users\Praveen B\Download..., chromedriverExecutableDir: null/driver/.exe, deviceName: &quot;Redmi Note 12&quot;, platformName: android, platformVersion: 12, udid: 509ead11022}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22111317I, appium:deviceName: 509ead11022, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 509ead11022, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 94, appium:takesScreenshot: true, appium:udid: 509ead11022, appium:viewportRect: {height: 2168, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: chrome, platformName: ANDROID}
-Element: [[AndroidDriver: chrome on ANDROID (669f2ac3-6636-4234-923a-afc9f1169268)] -&gt; xpath: //*[local-name()=&apos;svg&apos; and @viewBox=&apos;0 0 18 16&apos;]]
-Session ID: 669f2ac3-6636-4234-923a-afc9f1169268
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.qa.nobero.cartTest.cartTest.ToVerifyProductIsAddedToCartTest(cartTest.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.qa.nobero.cartTest.cartTest#ToVerifyProductIsAddedToCartTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;svg width=&quot;18&quot; height=&quot;16&quot; viewBox=&quot;0 0 18 16&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;...&lt;/svg&gt; is not clickable at point (28, 59). Other element would receive the click: &lt;div id=&quot;filter-dropdown-bg&quot; class=&quot;z-50 fixed left-0 top-0 h-screen w-screen bg-[#141A38]/50 invisible&quot; style=&quot;visibility: visible;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=112.0.5615.101)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [669f2ac3-6636-4234-923a-afc9f1169268, clickElement {id=c10a0772-73fd-4e34-a027-ac0fcc63ec4d}]
-Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: uiautomator2, appium:chromedriverExecutable: C:\Users\Praveen B\Download..., appium:chromedriverExecutableDir: null/driver/.exe, appium:databaseEnabled: false, appium:desired: {automationName: uiautomator2, browserName: chrome, chromedriverExecutable: C:\Users\Praveen B\Download..., chromedriverExecutableDir: null/driver/.exe, deviceName: &quot;Redmi Note 12&quot;, platformName: android, platformVersion: 12, udid: 509ead11022}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22111317I, appium:deviceName: 509ead11022, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 509ead11022, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 94, appium:takesScreenshot: true, appium:udid: 509ead11022, appium:viewportRect: {height: 2168, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: chrome, platformName: ANDROID}
-Element: [[AndroidDriver: chrome on ANDROID (669f2ac3-6636-4234-923a-afc9f1169268)] -&gt; xpath: //*[local-name()=&apos;svg&apos; and @viewBox=&apos;0 0 18 16&apos;]]
-Session ID: 669f2ac3-6636-4234-923a-afc9f1169268
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.qa.nobero.cartTest.cartTest.ToVerifyProductIsAddedToCartTest(cartTest.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.qa.nobero.cartTest.cartTest#ToVerifyProductIsAddedToCartTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;article data-ga-view=&quot;&quot; data-ga-view-info=&quot;Sort_View&quot; class=&quot;flex items-center pl-3.5  hover:cursor-pointer lg:justify-center lg:py-2 lg:px-4 lg:rounded lg:border-[1px] lg:border-[#E8E9EA]&quot; id=&quot;sort_button&quot;&gt;...&lt;/article&gt; is not clickable at point (281, 743). Other element would receive the click: &lt;input type=&quot;submit&quot; value=&quot;Apply&quot; onclick=&quot;showLoader()&quot; id=&quot;filter-submit&quot; class=&quot;flex items-center justify-center w-40 h-10 py-2.5 px-4 text-white bg-[#242F66] rounded-[84px]&quot;&gt;
-  (Session info: chrome=112.0.5615.101)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [669f2ac3-6636-4234-923a-afc9f1169268, clickElement {id=dbe1bd2b-55d1-4ee1-ab1c-7482fc47c5fe}]
-Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:automationName: uiautomator2, appium:chromedriverExecutable: C:\Users\Praveen B\Download..., appium:chromedriverExecutableDir: null/driver/.exe, appium:databaseEnabled: false, appium:desired: {automationName: uiautomator2, browserName: chrome, chromedriverExecutable: C:\Users\Praveen B\Download..., chromedriverExecutableDir: null/driver/.exe, deviceName: &quot;Redmi Note 12&quot;, platformName: android, platformVersion: 12, udid: 509ead11022}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 22111317I, appium:deviceName: 509ead11022, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 509ead11022, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 94, appium:takesScreenshot: true, appium:udid: 509ead11022, appium:viewportRect: {height: 2168, left: 0, top: 94, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: chrome, platformName: ANDROID}
-Element: [[AndroidDriver: chrome on ANDROID (669f2ac3-6636-4234-923a-afc9f1169268)] -&gt; xpath: //article[@id=&apos;sort_button&apos;]]
-Session ID: 669f2ac3-6636-4234-923a-afc9f1169268
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-	at com.qa.nobero.cartTest.cartTest.ToVerifyProductIsAddedToCartTest(cartTest.java:36)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Testng</h2><h3 id="m0">com.qa.nobero.cartTest.cartTest#startserver</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+	at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+	... 20 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 22 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.nobero.cartTest.cartTest#afterTestConfig</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.nobero.cartTest.cartTest#launchBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.nobero.cartTest.cartTest#stopServer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.nobero.cartTest.cartTest#ToVerifyApplyFilterforAvailabilityTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+	at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+	... 20 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 22 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.nobero.cartTest.cartTest#ToVerifyApplyFilterforColorTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+	at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+	... 20 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 22 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qa.nobero.cartTest.cartTest#ToVerifyApplyFilterforSizeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+	at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+	... 20 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 22 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.qa.nobero.cartTest.cartTest#ToVerifyProductIsAddedToCartAfterSearchTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+	at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+	... 20 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 22 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.qa.nobero.cartTest.cartTest#ToVerifyProductIsAddedToCartTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+	at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+	... 20 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 22 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.qa.nobero.cartTest.cartTest#ToVerifySortByBestSellingTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+	at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+	... 20 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 22 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.qa.nobero.cartTest.cartTest#ToVerifySortByFeaturedTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+	at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+	... 20 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 22 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.qa.nobero.cartTest.cartTest#ToVerifySortByNewArrivalTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+	at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+	... 20 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 22 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.qa.nobero.cartTest.cartTest#ToVerifySortByPriceHighToLowTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+	at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+	... 20 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 22 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.qa.nobero.cartTest.cartTest#ToVerifySortByPriceLowToHighTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It&apos;s possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+	at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+	... 20 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+	... 22 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

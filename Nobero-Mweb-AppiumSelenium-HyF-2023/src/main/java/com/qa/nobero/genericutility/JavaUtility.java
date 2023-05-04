@@ -13,7 +13,7 @@ import org.openqa.selenium.WebElement;
  * @author Praveen B
  */
 public class JavaUtility {
-	
+
 	/**
 	 * its used to generate the random number with in the range 
 	 * @return
@@ -23,7 +23,7 @@ public class JavaUtility {
 		int ranDomNum =  ranDom.nextInt(range);
 		String randomInteger = Integer.toString(ranDomNum);
 		return randomInteger;
-	
+
 	}
 	/**
 	 *  its used to get the current system date based on YYYY-MM-DD format
@@ -34,13 +34,13 @@ public class JavaUtility {
 		String currentDate = date.toString();
 		System.out.println(currentDate);
 		String[] arr = currentDate.split(" ");
-		
+
 		String yyyy = arr[5];
 		String dd = arr[2];
 		int mm = date.getMonth()+1;
-	
-			String formate = yyyy+"-"+mm+"-"+dd;
-			return formate;
+
+		String formate = yyyy+"-"+mm+"-"+dd;
+		return formate;
 	}
 	/**
 	 *  its used to get the current system date based on DD-MM-YYYY format 
@@ -51,13 +51,13 @@ public class JavaUtility {
 		String currentDate = date.toString();
 		System.out.println(currentDate);
 		String[] arr = currentDate.split(" ");
-		
+
 		String yyyy = arr[5];
 		String dd = arr[2];
 		int mm = date.getMonth()+1;
 
-			String formate = dd+"-"+mm+"-"+yyyy;
-			return formate;
+		String formate = dd+"-"+mm+"-"+yyyy;
+		return formate;
 	}
 	/**
 	 *  its used to get the current system date based on MM-DD-YYYY format
@@ -68,13 +68,13 @@ public class JavaUtility {
 		String currentDate = date.toString();
 		System.out.println(currentDate);
 		String[] arr = currentDate.split(" ");
-		
+
 		String yyyy = arr[5];
 		String dd = arr[2];
 		int mm = date.getMonth()+1;
-	
-			String formate = mm+"-"+dd+"-"+yyyy;
-			return formate;
+
+		String formate = mm+"-"+dd+"-"+yyyy;
+		return formate;
 	}
 
 	public static String  getSystemDateTime() {
@@ -86,10 +86,37 @@ public class JavaUtility {
 		String dd = arr[2];
 		int mm = date.getMonth()+1;
 		String time = arr[3].replace(":", "");
-			String formate = dd+mm+yyyy+time;
-			return formate;
-			
+		String formate = dd+mm+yyyy+time;
+		return formate;
+
+	}
+
+
+
+	public int returnNumber(String priceSTR) {
+		int numberValue;
+		String conc="";
+		for (int i = 0; i < priceSTR.length(); i++) {
+			if (priceSTR.charAt(i)>=48 || priceSTR.charAt(i)<=57) {
+				conc=conc+priceSTR.charAt(i);
+			}	
+		}
+		numberValue = Integer.parseInt(conc);
+		System.out.println(numberValue);
+		return numberValue;
+
+
 	}
 	
-	
+	  public static int extractNumbers(String input) {
+	        StringBuilder sb = new StringBuilder();
+	        for (int i = 0; i < input.length(); i++) {
+	            char c = input.charAt(i);
+	            if (Character.isDigit(c)) {
+	                sb.append(c);
+	            }
+	        }
+	        int num = Integer.parseInt(sb.toString());
+	        return num;
+	    }
 }

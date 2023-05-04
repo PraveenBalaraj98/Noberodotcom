@@ -16,6 +16,7 @@ public interface IConstants {
 	Duration Implicitly_TIMEOUT = Duration.ofSeconds(20);
 
 	String qaURLPropertyFilePath = "./propertyFile/qa.url.properties";
+	String excelPath = "./testdata/excelFile/NoberoTestData.xlsx";
 	
-	int retryValue = 3;
+	int retryValue = -1;
 }

@@ -13,6 +13,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
@@ -64,7 +65,7 @@ public class BaseClass {
 
 		driver = new AndroidDriver(url, desiredCapabilities);
 		sdriver=driver;
-		URL =fileUtil.getPropertyKeyValue("masterURL", IConstants.qaURLPropertyFilePath);
+		URL =fileUtil.getPropertyKeyValue("prodURL", IConstants.qaURLPropertyFilePath);
 		driver.get(URL);
 
 		driver.manage().timeouts().implicitlyWait(IConstants.Implicitly_TIMEOUT);
@@ -89,6 +90,10 @@ public class BaseClass {
 		//Change context back to the main page.
 		driver.context("CHROMIUM");
 
+	}
+	@AfterTest
+	public void afterTestConfig(){
+		driver.get(URL);
 	}
 
 	@AfterSuite

@@ -18,6 +18,11 @@ public class RepositoryHub {
 		return cartRepo;
 	}
 	
+	public SearchRepo getSearchRepo(){
+		SearchRepo searchRepo = new SearchRepo(driver);
+		return searchRepo;
+	}
+	
 	public HamburgerRepo getHamburgerRepo(){
 		HamburgerRepo hamburgerRepo = new HamburgerRepo(driver);
 		return hamburgerRepo;

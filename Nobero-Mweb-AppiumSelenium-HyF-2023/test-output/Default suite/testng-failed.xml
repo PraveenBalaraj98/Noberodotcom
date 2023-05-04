@@ -3,12 +3,60 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.nobero.cartTest.cartTest">
+      <class name="com.qa.nobero.junk.launchURLTest">
         <methods>
-          <include name="ToVerifyProductIsAddedToCartTest"/>
-          <include name="launchBrowser"/>
+          <include name="afterTestConfig"/>
           <include name="stopServer"/>
           <include name="startserver"/>
+          <include name="fetchVariantID"/>
+        </methods>
+      </class> <!-- com.qa.nobero.junk.launchURLTest -->
+      <class name="com.qa.nobero.genericutility.BaseClass">
+        <methods>
+          <include name="afterTestConfig"/>
+          <include name="stopServer"/>
+          <include name="launchBrowser"/>
+          <include name="startserver"/>
+        </methods>
+      </class> <!-- com.qa.nobero.genericutility.BaseClass -->
+      <class name="com.qa.nobero.searchTest.SearchTest">
+        <methods>
+          <include name="ToVerifyNotifyMeWhenAvailableAfterValidSearchTest"/>
+          <include name="ToVerifyApplyFilterAvailabilityOutOfStockIsEnabledAfterValidSearchTest"/>
+          <include name="ToVerifyApplyFilterPriceAfterValidSearchTest"/>
+          <include name="ToVerifyApplyFilterColorAfterValidSearchTest"/>
+          <include name="launchBrowser"/>
+          <include name="stopServer"/>
+          <include name="ToVerifyThatPLPIsDisplayedAfterValidSearchTest"/>
+          <include name="ToVerifyApplyFilterAvailabilityInStockIsEnabledAfterValidSearchTest"/>
+          <include name="ToVerifySizeGuideAfterValidSearchTest"/>
+          <include name="ToVerifyThatProductIsMovedToCartAfterValidSearchTest"/>
+          <include name="ToVerifyThatPDPIsDisplayedAfterValidSearchTest"/>
+          <include name="startserver"/>
+          <include name="ToVerifySortByNewArrivalIsEnabledAfterValidSearchTest"/>
+          <include name="ToVerifySortByFeaturedIsEnabledAfterValidSearchTest"/>
+          <include name="afterTestConfig"/>
+          <include name="ToVerifyApplyFilterSizeIsEnabledAfterValidSearchTest"/>
+          <include name="ToVerifySortByPriceHighToLowIsEnabledAfterValidSearchTest"/>
+          <include name="ToVerifySortByPriceLowToHighIsEnabledAfterValidSearchTest"/>
+        </methods>
+      </class> <!-- com.qa.nobero.searchTest.SearchTest -->
+      <class name="com.qa.nobero.cartTest.cartTest">
+        <methods>
+          <include name="ToVerifySortByFeaturedTest"/>
+          <include name="launchBrowser"/>
+          <include name="stopServer"/>
+          <include name="ToVerifySortByNewArrivalTest"/>
+          <include name="startserver"/>
+          <include name="ToVerifyApplyFilterforAvailabilityTest"/>
+          <include name="ToVerifyProductIsAddedToCartTest"/>
+          <include name="afterTestConfig"/>
+          <include name="ToVerifyApplyFilterforSizeTest"/>
+          <include name="ToVerifySortByPriceHighToLowTest"/>
+          <include name="ToVerifySortByPriceLowToHighTest"/>
+          <include name="ToVerifySortByBestSellingTest"/>
+          <include name="ToVerifyApplyFilterforColorTest"/>
+          <include name="ToVerifyProductIsAddedToCartAfterSearchTest"/>
         </methods>
       </class> <!-- com.qa.nobero.cartTest.cartTest -->
     </classes>
