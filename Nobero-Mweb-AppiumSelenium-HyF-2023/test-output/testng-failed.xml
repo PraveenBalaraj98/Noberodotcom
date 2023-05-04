@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Testng(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.nobero.cartTest.cartTest">
+      <class name="com.qa.nobero.searchTest.SearchTest">
         <methods>
-          <include name="ToVerifySortByFeaturedTest"/>
+          <include name="ToVerifyNotifyMeWhenAvailableAfterValidSearchTest"/>
+          <include name="ToVerifyApplyFilterAvailabilityOutOfStockIsEnabledAfterValidSearchTest"/>
+          <include name="ToVerifyApplyFilterColorAfterValidSearchTest"/>
+          <include name="ToVerifyApplyFilterPriceAfterValidSearchTest"/>
           <include name="stopServer"/>
           <include name="launchBrowser"/>
-          <include name="ToVerifySortByNewArrivalTest"/>
+          <include name="ToVerifyThatPLPIsDisplayedAfterValidSearchTest"/>
+          <include name="ToVerifyApplyFilterAvailabilityInStockIsEnabledAfterValidSearchTest"/>
+          <include name="ToVerifySizeGuideAfterValidSearchTest"/>
+          <include name="ToVerifyThatPDPIsDisplayedAfterValidSearchTest"/>
+          <include name="ToVerifyThatProductIsMovedToCartAfterValidSearchTest"/>
           <include name="startserver"/>
-          <include name="ToVerifyApplyFilterforAvailabilityTest"/>
-          <include name="ToVerifyProductIsAddedToCartTest"/>
+          <include name="ToVerifySortByNewArrivalIsEnabledAfterValidSearchTest"/>
+          <include name="ToVerifySortByFeaturedIsEnabledAfterValidSearchTest"/>
           <include name="afterTestConfig"/>
-          <include name="ToVerifyApplyFilterforSizeTest"/>
-          <include name="ToVerifySortByPriceHighToLowTest"/>
-          <include name="ToVerifySortByPriceLowToHighTest"/>
-          <include name="ToVerifySortByBestSellingTest"/>
-          <include name="ToVerifyProductIsAddedToCartAfterSearchTest"/>
-          <include name="ToVerifyApplyFilterforColorTest"/>
+          <include name="ToVerifyApplyFilterSizeIsEnabledAfterValidSearchTest"/>
+          <include name="ToVerifySortByPriceHighToLowIsEnabledAfterValidSearchTest"/>
+          <include name="ToVerifySortByPriceLowToHighIsEnabledAfterValidSearchTest"/>
         </methods>
-      </class> <!-- com.qa.nobero.cartTest.cartTest -->
+      </class> <!-- com.qa.nobero.searchTest.SearchTest -->
     </classes>
-  </test> <!-- Testng(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="11" passed="0" failed="0" skipped="10">
+<testng-results ignored="0" total="14" passed="0" failed="0" skipped="14">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-03T21:35:59 IST" name="Suite" finished-at="2023-05-03T21:35:59 IST" duration-ms="271">
+  <suite started-at="2023-05-04T10:37:52 IST" name="Default suite" finished-at="2023-05-04T10:37:52 IST" duration-ms="90">
     <groups>
     </groups>
-    <test started-at="2023-05-03T21:35:59 IST" name="Testng" finished-at="2023-05-03T21:35:59 IST" duration-ms="271">
-      <class name="com.qa.nobero.cartTest.cartTest">
-        <test-method is-config="true" signature="startserver()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:38 IST" name="startserver" finished-at="2023-05-03T21:35:59 IST" duration-ms="21158" status="FAIL">
+    <test started-at="2023-05-04T10:37:52 IST" name="Default test" finished-at="2023-05-04T10:37:52 IST" duration-ms="90">
+      <class name="com.qa.nobero.searchTest.SearchTest">
+        <test-method is-config="true" signature="startserver()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:31 IST" name="startserver" finished-at="2023-05-04T10:37:52 IST" duration-ms="21214" status="FAIL">
           <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
               <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
@@ -59,7 +59,7 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
 at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
 at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
 at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
@@ -74,11 +74,11 @@ at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startserver -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:59 IST" name="launchBrowser" finished-at="2023-05-03T21:35:59 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="launchBrowser" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="ToVerifyApplyFilterforAvailabilityTest()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:59 IST" name="ToVerifyApplyFilterforAvailabilityTest" finished-at="2023-05-03T21:35:59 IST" duration-ms="0" status="SKIP">
+        <test-method signature="ToVerifyApplyFilterAvailabilityInStockIsEnabledAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifyApplyFilterAvailabilityInStockIsEnabledAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
           <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
               <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
@@ -130,7 +130,7 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
 at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
 at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
 at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
@@ -144,8 +144,8 @@ at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
           </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ToVerifyApplyFilterforAvailabilityTest -->
-        <test-method signature="ToVerifyApplyFilterforColorTest()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:59 IST" name="ToVerifyApplyFilterforColorTest" finished-at="2023-05-03T21:35:59 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- ToVerifyApplyFilterAvailabilityInStockIsEnabledAfterValidSearchTest -->
+        <test-method signature="ToVerifyApplyFilterAvailabilityOutOfStockIsEnabledAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifyApplyFilterAvailabilityOutOfStockIsEnabledAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
           <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
               <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
@@ -197,7 +197,7 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
 at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
 at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
 at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
@@ -211,8 +211,8 @@ at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
           </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ToVerifyApplyFilterforColorTest -->
-        <test-method signature="ToVerifyApplyFilterforSizeTest()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:59 IST" name="ToVerifyApplyFilterforSizeTest" finished-at="2023-05-03T21:35:59 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- ToVerifyApplyFilterAvailabilityOutOfStockIsEnabledAfterValidSearchTest -->
+        <test-method signature="ToVerifyApplyFilterColorAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifyApplyFilterColorAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
           <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
               <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
@@ -264,7 +264,7 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
 at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
 at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
 at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
@@ -278,8 +278,8 @@ at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
           </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ToVerifyApplyFilterforSizeTest -->
-        <test-method signature="ToVerifyProductIsAddedToCartAfterSearchTest()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:59 IST" name="ToVerifyProductIsAddedToCartAfterSearchTest" finished-at="2023-05-03T21:35:59 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- ToVerifyApplyFilterColorAfterValidSearchTest -->
+        <test-method signature="ToVerifyApplyFilterPriceAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifyApplyFilterPriceAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
           <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
               <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
@@ -331,7 +331,7 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
 at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
 at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
 at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
@@ -345,8 +345,8 @@ at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
           </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ToVerifyProductIsAddedToCartAfterSearchTest -->
-        <test-method signature="ToVerifyProductIsAddedToCartTest()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:59 IST" name="ToVerifyProductIsAddedToCartTest" finished-at="2023-05-03T21:35:59 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- ToVerifyApplyFilterPriceAfterValidSearchTest -->
+        <test-method signature="ToVerifyApplyFilterSizeIsEnabledAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifyApplyFilterSizeIsEnabledAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
           <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
               <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
@@ -398,7 +398,7 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
 at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
 at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
 at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
@@ -412,8 +412,8 @@ at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
           </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ToVerifyProductIsAddedToCartTest -->
-        <test-method signature="ToVerifySortByBestSellingTest()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:59 IST" name="ToVerifySortByBestSellingTest" finished-at="2023-05-03T21:35:59 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- ToVerifyApplyFilterSizeIsEnabledAfterValidSearchTest -->
+        <test-method signature="ToVerifyNotifyMeWhenAvailableAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifyNotifyMeWhenAvailableAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
           <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
               <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
@@ -465,7 +465,7 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
 at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
 at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
 at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
@@ -479,8 +479,8 @@ at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
           </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ToVerifySortByBestSellingTest -->
-        <test-method signature="ToVerifySortByFeaturedTest()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:59 IST" name="ToVerifySortByFeaturedTest" finished-at="2023-05-03T21:35:59 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- ToVerifyNotifyMeWhenAvailableAfterValidSearchTest -->
+        <test-method signature="ToVerifySizeGuideAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifySizeGuideAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
           <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
               <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
@@ -532,7 +532,7 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
 at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
 at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
 at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
@@ -546,8 +546,8 @@ at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
           </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ToVerifySortByFeaturedTest -->
-        <test-method signature="ToVerifySortByNewArrivalTest()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:59 IST" name="ToVerifySortByNewArrivalTest" finished-at="2023-05-03T21:35:59 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- ToVerifySizeGuideAfterValidSearchTest -->
+        <test-method signature="ToVerifySortByFeaturedIsEnabledAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifySortByFeaturedIsEnabledAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
           <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
               <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
@@ -599,7 +599,7 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
 at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
 at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
 at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
@@ -613,8 +613,8 @@ at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
           </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ToVerifySortByNewArrivalTest -->
-        <test-method signature="ToVerifySortByPriceHighToLowTest()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:59 IST" name="ToVerifySortByPriceHighToLowTest" finished-at="2023-05-03T21:35:59 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- ToVerifySortByFeaturedIsEnabledAfterValidSearchTest -->
+        <test-method signature="ToVerifySortByNewArrivalIsEnabledAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifySortByNewArrivalIsEnabledAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
           <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
               <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
@@ -666,7 +666,7 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
 at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
 at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
 at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
@@ -680,8 +680,8 @@ at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
           </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ToVerifySortByPriceHighToLowTest -->
-        <test-method signature="ToVerifySortByPriceLowToHighTest()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:59 IST" name="ToVerifySortByPriceLowToHighTest" finished-at="2023-05-03T21:35:59 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- ToVerifySortByNewArrivalIsEnabledAfterValidSearchTest -->
+        <test-method signature="ToVerifySortByPriceHighToLowIsEnabledAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifySortByPriceHighToLowIsEnabledAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
           <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
               <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
@@ -733,7 +733,7 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20012 ms
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
 at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
 at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
 at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
@@ -747,16 +747,284 @@ at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
           </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ToVerifySortByPriceLowToHighTest -->
-        <test-method is-config="true" signature="afterTestConfig()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:59 IST" name="afterTestConfig" finished-at="2023-05-03T21:35:59 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- ToVerifySortByPriceHighToLowIsEnabledAfterValidSearchTest -->
+        <test-method signature="ToVerifySortByPriceLowToHighIsEnabledAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifySortByPriceLowToHighIsEnabledAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySortByPriceLowToHighIsEnabledAfterValidSearchTest -->
+        <test-method signature="ToVerifyThatPDPIsDisplayedAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifyThatPDPIsDisplayedAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyThatPDPIsDisplayedAfterValidSearchTest -->
+        <test-method signature="ToVerifyThatPLPIsDisplayedAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifyThatPLPIsDisplayedAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyThatPLPIsDisplayedAfterValidSearchTest -->
+        <test-method signature="ToVerifyThatProductIsMovedToCartAfterValidSearchTest()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="ToVerifyThatProductIsMovedToCartAfterValidSearchTest" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
+            <message>
+              <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Praveen B\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0] 
+Process output: [35m[Appium][39m Welcome to Appium v2.0.0-beta.62
+[35m[Appium][39m Attempting to load driver uiautomator2...
+[debug] [35m[Appium][39m Requiring driver at C:\Users\Praveen B\.appium\node_modules\appium-uiautomator2-driver
+[38;5;0m[HTTP][0m Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[35m[Appium][39m Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[debug] [35m[Appium][39m     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+[debug] [35m[Appium][39m     at listenInCluster (node:net:1788:12)
+[debug] [35m[Appium][39m     at doListen (node:net:1937:7)
+[debug] [35m[Appium][39m     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:187)
+at com.qa.nobero.genericutility.BaseClass.startserver(BaseClass.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/status] to be available after 20011 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:89)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:152)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:174)
+... 20 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:87)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyThatProductIsMovedToCartAfterValidSearchTest -->
+        <test-method is-config="true" signature="afterTestConfig()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="afterTestConfig" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTestConfig -->
-        <test-method is-config="true" signature="stopServer()[pri:0, instance:com.qa.nobero.cartTest.cartTest@2af004b]" started-at="2023-05-03T21:35:59 IST" name="stopServer" finished-at="2023-05-03T21:35:59 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="stopServer()[pri:0, instance:com.qa.nobero.searchTest.SearchTest@2af004b]" started-at="2023-05-04T10:37:52 IST" name="stopServer" finished-at="2023-05-04T10:37:52 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopServer -->
-      </class> <!-- com.qa.nobero.cartTest.cartTest -->
-    </test> <!-- Testng -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.qa.nobero.searchTest.SearchTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
